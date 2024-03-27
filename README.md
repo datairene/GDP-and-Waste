@@ -1,2 +1,20 @@
 # GDP-and-Waste
 This project investigates the relationship between a nations GDP and the amount of municipal waste it produces. To investigate this I used Python, pandas, matplotlib, numpy and seaborn.
+
+Human produced municipal waste is a rapidly increasing problem. Each year the worlds population grows with waste growing right along with it. As a human race we need to identify patterns in our waste production so we can see more growth and less trash. This project aims to begin to understand our waste problem.
+
+Data from this project comes from 'What a Waste' global database, a project by the World Bank. Check out the raw data here. https://datacatalog.worldbank.org/search/dataset/0039597/What-a-Waste-Global-Database 
+
+The database aggregates data on solid waste management around the world. It includes metrics on all steps from the waste management chain. I focused on total MSW (Municipal Solid Waste). While there may be variations in the definitions and quality of reporting for individual data points, general trends should reflect the global reality.
+
+Cleaing the data in this project included removing unneccessary columns, renaming columns for clarity and removing rows with missing data. I chose to remove the rows with missing data since there were only two rows missing data and they were both nations with small populations. I also added a column with the total MSW per year per capita in order to control for population variety.
+
+The heat map created with seaborn varifies that the strong relationship between GDP and MSW per year per capita. Using numpy, I created a scatter plot that shows a clear linear regression with a few outliers. To confirm the linear regression I used an ANOVA table. The ANOVA table gave me an F-value of 167.5 and a P-Value of 1.188040e-28, indicating strong evidence against the null hypothesis. With this confirmation I made found the linear regression equation of y = 0.000008x + 0.204712.
+
+I also added to the scatterplot a color coded grouping based on income ID's. This helps further illustrate the differences between the income level of a counrty and waste produced. Interestingly, there is more variety in the high income countries. The reason for these vary, I will explore a few in the next section.
+
+There are several notable outliers found in this data. I will discuss four of them. Singapore and Qatar are both countries with very high GDP's but low waste. In Qatar there is huge income inequality where many people live lives similiarly to those in low income countries. This means that they produce less waste. Singapore has made intentional efforts to reduse their waste, making efforts to be a 'Zero Waste Nation.' Most tras produced in Singapore in incinerated. This reduces landfill space and creates energy that can used. However, some experts believe this is not a sustaiable approach due to citizens not being incentivised to reduce consumption, loss of resources creating unneccessary demand and increased pollution.
+
+The U.S. Virgin Islands and Moldova both create a lot more waste than expected for their GDP. With limited space, waste management is important but inadequate in the Virgin Islands. Tourism dramatically increases the amount of waste produced with no affect of population. This pattern can be seen in other nations/cities with high tourism. Moldova is a middle income country lacking sufficient public works. Citizens have access to many single use products without access to a good way to dispose of it. In the rural areas of Moldova there is no public works while the cities do not have waste sorting so no waste can be repurposed.
+
+Urgent changes are needed. As development continues around the world nations and cities need to find sustainable solutions for waste production. 'What a Waste' predicts annual waste generation will grow from 2.24 billion tons in 2020 to 3.88 billion tons in 2050. This does not need to happen. By learning from places that have already implemented waste mitigation policies and making changes in our everyday lives we can have more growth and less garbage!
