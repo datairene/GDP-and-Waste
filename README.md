@@ -1,5 +1,5 @@
 # GDP-and-Waste
-This project investigates the relationship between a nations GDP and the amount of municipal waste it produces. To investigate this I used Python, pandas, matplotlib, numpy and seaborn.
+This project investigates the relationship between a nation's GDP and the amount of municipal waste it produces. To investigate this I used Python, pandas, matplotlib, numpy and seaborn.
 
 Human produced municipal waste is a rapidly increasing problem. Each year the worlds population grows with waste growing right along with it. As a human race we need to identify patterns in our waste production so we can see more growth and less trash. This project aims to begin to understand our waste problem.
 
